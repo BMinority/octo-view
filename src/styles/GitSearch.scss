@@ -1,16 +1,9 @@
 .bc-git-search {
   width: 100%;
-  max-width: 1200px;
-  padding: 2rem;
+  padding: 1rem;
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  font-family: var(--font-base);
-
-  h2 {
-    display: flex;
-    align-items: center;
-  }
 
   &__input-group {
     display: flex;
@@ -32,7 +25,6 @@
     button {
       padding: 0.75rem 1.2rem;
       border-radius: 8px;
-      background-color: var(--color-02);
       color: var(--color-05);
       font-weight: bold;
       cursor: pointer;
@@ -100,8 +92,6 @@
     justify-content: space-between;
     align-items: center;
     margin-top: 1rem;
-    gap: 1rem;
-    flex-wrap: wrap;
 
     button {
       display: flex;
@@ -127,6 +117,7 @@
     }
 
     span {
+      font-size: 0.8rem;
       font-weight: bold;
       color: var(--color-base);
     }
@@ -135,15 +126,6 @@
   // Mobile styles
   @media (max-width: 600px) {
     padding: 1rem;
-
-    h2 {
-      font-size: 1.5rem;
-
-      img {
-        width: 24px;
-        height: 24px;
-      }
-    }
 
     &__input-group {
       flex-direction: column;
@@ -162,13 +144,7 @@
     }
 
     &__pagination {
-      flex-direction: column;
-      gap: 0.75rem;
-      button,
-      span {
-        width: 100%;
-        text-align: center;
-      }
+      width: 100%;
     }
   }
 }
